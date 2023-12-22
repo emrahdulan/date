@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('path/to/your/background_image.jpg') no-repeat center center fixed; 
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+    padding-top: 50px; /* Adjust space at the top if needed */
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+  
+  #response {
+    margin-top: 20px;
+    font-size: 24px;
+    color: green;
+    position: relative;
+    z-index: 10;
+  }
+  
+  #catImage {
+    max-width: 100%;
+    max-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @keyframes dance {
+    0%, 100% { transform: rotate(0deg) translate(-50%, -50%); }
+    25% { transform: rotate(20deg) translate(-50%, -50%); }
+    75% { transform: rotate(-20deg) translate(-50%, -50%); }
+  }
+  
+  .dancing {
+    animation: dance 0.5s infinite;
+  }
+  
